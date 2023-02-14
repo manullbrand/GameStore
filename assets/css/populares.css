@@ -21,8 +21,6 @@
     "card-imagem"
     "card-corpo";
   grid-template-columns: 100%;
-  /* grid-template-rows: 173px auto; ali em cima no "grid-template-areas" defini que terei duas linhas. Portanto, aqui nessa funcionalidade estou falando que minha primeira linha deve ter 173px, e a segunda linha pode ter um tamanho automático qualquer que caiba meu conteúdo. (já no media query) */
-  /* margin-right: 1rem; já no media query (já no media query) */
 }
 
 .populares__card:last-child {

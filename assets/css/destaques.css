@@ -6,58 +6,34 @@
 
 .destaques {
   display: grid;
-  grid-gap: 0.2rem; /* dá um espaçamento entre as linhas e colunas */
+  grid-gap: 0.2rem;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 33.33% 33.33% 33.33%;
-  height: calc(
-    100vh - 50px
-  ); /* o 50px que subtraí é a altura do meu cabeçalho, por isso retiro, para essa propriedade não tirar pedaço do meu cabeçalho. */
+  height: calc(100vh - 50px);
 }
 
 .destaques__principal {
-  /* TODO esse código aqui embaixo pode ser substituído pela propriedade "background":
-  background-image: url(../img/fortnite.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
   background: url(../img/fortnite.jpg) center / cover no-repeat;
-  /* TODO esse código pode ser substituído por "grid-column" ou "grid-row": 
-  grid-column-start: 1;
-  grid-column-end: 4; /* coloco onde eu quero que minha coluna PARE, e não até onde ela efetivamente vai.
-  grid-row-start: 1;
-  grid-row-end: 3; /* coloco onde eu quero que minha linha PARE, e não até onde ela efetivamente vai. */
-  /* grid-column: 1 / 4; o que eu estiver mudando no media query, eu tenho que tirar daqui. */
   grid-row: 1 / 3;
 }
 
-/* pegando apenas a posição em que queremos colocar o PUBG */
 .destaques__secundario:nth-child(2) {
   background: url(../img/pubg.jpg) center / cover no-repeat;
-  /* a mesma coisa dali de cima: o que estou mudando nos media queries, eu tiro daqui e deixo só lá no media query. Ou seja: PRIMEIRO faço todos os estilos do site aqui. Daí, quando estiver finalizando o site com media queries, vou apagando aqui e deixando as informações redundantes apenas lá nas media queries. */
-  /* grid-column: 4 / 4;
-  grid-row: 1 / 1; */
 }
 
 .destaques__secundario:nth-child(3) {
   background: url(../img/slack.png) center / cover no-repeat;
-  /* grid-column: 4 / 4;
-  grid-row: 2 / 2; */
 }
 
 .destaques__secundario:nth-child(4) {
   background: url(../img/whatsapp.png) center / cover no-repeat;
-  /* grid-column: 4 / 4;
-  grid-row: 3 / 3; */
 }
 
 .destaques__secundario:nth-child(5) {
   background: url(../img/cs-go.jpg) center / cover no-repeat;
-  /* grid-column: 3 / 3;
-  grid-row: 3 / 3; */
 }
 
 .destaques__categorias {
-  /* grid-column: 1 / 3; */
   grid-row: 3 / 3;
 }
 
@@ -79,7 +55,7 @@
 }
 
 .destaques__categorias___link {
-  color: inherit; /* esse "inherit" significa que esse elemento está herdando determinada configuração do seu elemento pai. Aqui no caso, a cor de texto preta (e não azul, como normalmente aparece para links. */
+  color: inherit;
 }
 
 .destaques__titulo {
@@ -89,4 +65,3 @@
   text-align: center;
   width: 100%;
 }
-
